@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+padding: 90px 20px 0;
+}
+
+.header{
+    background-color: rgb(247, 146, 78);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between; 
+
+  max-width: 992px;
+  margin: 0 auto;
+
+}
+
+.nav-link{
+color: white;
+text-decoration: none;
+
+}
+
+.html5{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+
+.nav-menu {
+
+    margin-right: 40px;
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin-right:0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+    
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+   
+}
+.nav-menu-link:hover{
+    background-color: rgb(224, 226, 86);
+    transition: 0.5s;
+}
+
+.nave-toggle{
+    color: azure;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+}
+
+table{
+    width: 90%;
+    border:2px solid rgb(126, 124, 124);
+    background-color:rgb(255, 255, 143);
+    margin: auto;
+    text-align: justify;
+}
+
+h1{
+    text-align: center;
+}
+
+td{width: 50px;
+padding: 20px 20px;
+background-color: rgb(163, 243, 126);
+font-size: small;}
+
+@media (max-width:768px){
+    body{
+        padding-bottom: 70px;
+        
+    }
+
+    .header{
+        
+        height: 60px;
+        
+    
+    }
+    
+    
+    
+    .html5{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    
+    
+    .nav-menu {
+    
+        margin-right: 20px;
+        flex-direction: column;
+        background-color: aquamarine;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% -60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: 0,3s;
+    
+    }
+    
+    .nav-menu-item{
+       
+        line-height: 70px;
+        
+        
+    }
+    
+    
+    .nav-menu-link:hover{
+        background: none;
+        transition: 0.5s;
+    }
+    
+    .nav-toggle{
+    
+    
+        display: block;
+    }
+
+    .nav-menu_visible{
+
+        left: 0;
+    }
+
+    
+}
+    
